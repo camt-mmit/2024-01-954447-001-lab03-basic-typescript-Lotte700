@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 03: Simple</title>
+  <script type="application/javascript" src="/dom03-simple.js"></script>
+</head>
+<body>
+  <!-- Template ที่เก็บ component ที่จะสร้างใหม่ -->
+  <template class="app-tmpl-input">
+    <div class="app-cmd-input">
+      <label>
+        <b class="app-elem-input-title">Number <span class="app-elem-input-title-no"></span></b>
+        <input type="number" value="0" class="app-elem-input">
+      </label>
+    </div>
+  </template>
+
+  <!-- ปุ่มที่ใช้เพิ่ม Input ใหม่ -->
+  <div>
+    <button type="button" class="app-cmd-add-input">Add Input</button>
+  </div>
+
+  <!-- ส่วนที่จะแสดง Input Components -->
+  <div class="app-cmd-input-list"></div>
+
+  <!-- ผลรวมที่คำนวณ -->
+  <div>
+    <label>
+      <b>Result</b>
+      <output class="app-elem-result">0</output>
+    </label>
+  </div>
+</body>
+</html>
