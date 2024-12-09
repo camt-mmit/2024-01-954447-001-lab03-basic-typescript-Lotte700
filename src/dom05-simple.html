@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 05: Module</title>
+
+    <script type="module" src="dom05-simple.js"></script>
+  </head>
+  <body>
+    <secion class="app-cmp-section">
+      <div>
+        <button type="button" class="app-cmd-add-input">Add</button>
+      </div>
+
+      <div class="app-cmp-inputs-list">
+        <template class="app-tmpl-input">
+          <div class="app-cmp-input">
+            <label>
+              <b class="app-elem-title"
+                >Number <span class="app-elem-title-no"></span
+              ></b>
+              <input type="number" value="0" class="app-elem-input" />
+            </label>
+            <button type="button" class="app-cmd-remove-input">X</button>
+          </div>
+        </template>
+      </div>
+
+      <div>
+        <label>
+          <b>Result</b>
+          <output class="app-elem-result">0</output>
+        </label>
+      </div>
+    </secion>
+  </body>
+</html>
